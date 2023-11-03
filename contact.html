@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+        body {
+            background-image: url(fit1.png);
+            background-repeat:no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="neko">
+        <nav>
+            <ul>
+                <li><img src="fit.png"></li>
+                <li><a href="home.html" style="font-size: 30px;">Home</a></li>
+                <li><a href="benefits.html" style="font-size: 30px;" >Benefits</a></li>
+                <li><a href="about.html" style="font-size: 30px;">About</a></li>
+                <li><a href="contact.html" style="font-size: 30px;">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="fitnes" id="contact">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or want to collaborate with us? Reach out to us through these channels:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/True.Damage.08">Facebook</a></li>
+                <li><a href="https://myaccount.google.com/profile">Gmail</a></li>
+                <li><a href="https://www.youtube.com/channel/UCPwnkItc0OxUTus8U-kmymA">YouTube</a></li>
+            </ul>
+
+            <div class="container">
+                <h2 style="color: aliceblue;">Contact Me</h2>
+                <p style="color: aliceblue;">Feel free to get in touch with me</p>
+                <form action="#" method="post">
+                    <label for="name" style="color: aliceblue;">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email" style="color: aliceblue;">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message" style="color: aliceblue;">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="fitnes" id="musician-access">
+            <h1>Login/Sign up</h1>
+            <p>Log in or <a href="#musician-signup">Sign Up</a> to get started.</p>
+            <form id="musicianLoginForm">
+                <label for="musicianUsername">Username</label>
+                <input type="text" id="musicianUsername" name="musicianUsername" required>
+
+                <label for="musicianPassword">Password</label>
+                <input type="password" id="musicianPassword" name="musicianPassword" required>
+
+                <button id="musicianLoginButton" type="submit" style="font-size: 20px;">Login</button>
+            </form>
+            <p id="musicianLoginMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
